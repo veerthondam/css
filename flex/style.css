@@ -1,0 +1,58 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+#parent{
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+    
+}
+
+
+div {
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+  
+    border-radius: 5px;
+    border: 1px solid green;
+    margin: 10px;
+    /* box-shadow: 1px 1px 2px #444; */
+  }
+  div header {
+    width: initial;
+    height: 75px;
+    background-color: aqua;
+    margin: 0 0 10px 0;
+    padding: 7px;
+    border: 2px solid orange;
+  }
+  
+  /* single colon for IE 8  
+  div::before {
+    content: "psuedo 150px";
+    display: block;
+    width: 150px;
+    background: #eee;
+    padding: 10px;
+    border-radius: 4px;
+  } 
+  */
+   
+  /*
+  .module {
+    box-sizing: content-box;
+  }
+
+  */
+  
+  /* single colon for IE 8 
+  .module:after {
+    content: "pseudo 150px";
+    display: block;
+    width: 150px;
+    padding: 10px;
+  } */
