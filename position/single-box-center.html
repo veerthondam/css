@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Box - Center</title>
+    <style>
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: antiquewhite;
+            border: 2px dotted blue;
+        }
+        /* Type 1 */
+        .center{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        /* Type 2 */
+        .centerq{
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box center">
+
+    </div>
+</body>
+</html>

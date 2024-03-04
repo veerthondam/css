@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Inside box center </title>
+    <style>
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: antiquewhite;
+            border: 3px dotted blue;
+        }
+        .box-inside{
+            height: 80px;
+            width: 80px;
+            background-color: gold;
+            border: 3px dotted blue;
+        }
+        /* Method 2 
+        .box-inside{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .box{
+            position: relative;
+        }
+
+        /* Method 2 ends */
+
+        /* Method 3 Starts */
+        .box{
+            position: relative;
+        }
+        .box-inside{
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box-inside">
+        </div>
+    </div>
+</body>
+</html>
